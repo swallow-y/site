@@ -1,28 +1,28 @@
-title: Writing
+title: 主流浏览器及其内核
 ---
 
-{% youtube AIqBubK6ZLc %}
+{%只是简单的说明一下，不做详细介绍%}
 
-To create a new post or a new page, you can run the following command:
+主流浏览器有:
 
 ``` bash
-$ hexo new [layout] <title>
+IE  Chrome  Firefox   Safari   Opera 
 ```
 
-`post` is the default `layout`, but you can supply your own. You can change the default layout by editing the `default_layout` setting in `_config.yml`.
 
 ### Layout
 
-There are three default layouts in Hexo: `post`, `page` and `draft`. Files created by each of them is saved to a different path. Newly created posts are saved to the `source/_posts` folder.
+这几个只是我个人觉得所占市场份额较大的浏览器.
 
-Layout | Path
+浏览器 | 内核
 --- | ---
-`post` | `source/_posts`
-`page` | `source`
-`draft` | `source/_drafts`
+`IE` | `Trident`
+`Chrome` | `webkit/blink`
+`Firefox` | `Gecko`
+`Safari` | `webkit`
+`Opera` | `Presto`
 
-{% note tip Don't process my posts! %}
-If you don't want your posts processed, you can set `layout: false` in front-matter.
+{% IE浏览器是微软开发的，所使用的内核为trident，其实绝大多数浏览器没有自己独立开发的内核，如360浏览器（使用trident，在其他版本也使用了webkit或blink），uc浏览器（使用blink和trident内核），其他的可以自己上网百度 %}
 {% endnote %}
 
 ### Filename
